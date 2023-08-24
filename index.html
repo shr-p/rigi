@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/tw-elements.min.css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com/3.3.0"></script>
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          fontFamily: {
+            sans: ["Roboto", "sans-serif"],
+            body: ["Roboto", "sans-serif"],
+            mono: ["ui-monospace", "monospace"],
+          },
+        },
+        corePlugins: {
+          preflight: false,
+        },
+      };
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/tw-elements.umd.min.js"></script>
+  </head>
+  <body style="background-color: rgb(239, 251, 252);">
+    <!-- Nav Bar -->
+    <nav class="bg-white border-gray-200 dark:bg-gray-900">
+      <div
+        class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
+      >
+        <a href="https://flowbite.com/" class="flex items-center">
+          <span
+            class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white"
+            >Logo</span
+          >
+        </a>
+        <button
+          data-collapse-toggle="navbar-default"
+          type="button"
+          class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+          aria-controls="navbar-default"
+          aria-expanded="false"
+        >
+          <span class="sr-only">Open main menu</span>
+          <svg
+            class="w-5 h-5"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 17 14"
+          >
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M1 1h15M1 7h15M1 13h15"
+            />
+          </svg>
+        </button>
+        <div class="hidden w-full md:block md:w-auto " id="navbar-default">
+          <ul
+            class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700"
+          >
+            <li>
+              <a
+                href="#"
+                class="block py-2 pl-3 pr-4 text-white bg-gray-900 rounded md:bg-transparent md:text-gray-900 md:p-0 dark:text-white md:dark:text-blue-500"
+                aria-current="page"
+                >Join Community</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                >Contact Us</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+      <!-- Intro Page -->
+      <div class="grid grid-cols-1 gap-4 items-center justify-center bg-blue-700 h-screen md:grid-cols-2">
+        
+          <div class="m-4 sm:m-8  items-center justify-center">
+            <a href="#">
+                <h1 class="mb-2 text-3xl sm:text-5xl font-bold tracking-tight text-white">
+                    Hack your wealth journey<br>inside the 1% club
+                </h1>
+            </a>
+            <p class="my-2 text-lg sm:text-xl font-light text-white dark:text-gray-400">
+                A super premium annual subscription that will transform your wealth planning and make you say
+                <br>
+                “Bro! I’m financially sorted!”
+            </p>
+            <button href="#" class="mt-4 px-8 py-2 text-base sm:text-sm font-medium text-center text-blue-500 bg-white rounded-full hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                Join the Community
+            </button>
+        </div>
+        
+        <div class="m-4 sm:mx-8 flex items-center justify-center">
+          <div class="bg-white w-3/4 h-3/4 rounded-lg overflow-hidden shadow-md">
+              <img src="./sharan.png" alt="Image 1" class="mx-auto">
+          </div>
+      </div>
+      
+        </div>
+        
+        <!-- Featured IN -->
+         <section>  
+          <div class="py-24 sm:py-32">
+            <div class="mx-auto max-w-7xl px-6 lg:px-8">
+              <h2 class="text-center text-lg font-semibold leading-8 text-gray-900">Featured in </h2>
+              <div class="mx-auto mt-10 grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-5">
+                <img class="col-span-2 max-h-12 w-full object-contain lg:col-span-1" src="./forbes.svg" alt="Transistor" width="158" height="48">
+                <img class="col-span-2 max-h-12 w-full object-contain lg:col-span-1" src="https://tailwindui.com/img/logos/158x48/reform-logo-gray-900.svg" alt="Reform" width="158" height="48">
+                <img class="col-span-2 max-h-12 w-full object-contain lg:col-span-1" src="https://tailwindui.com/img/logos/158x48/tuple-logo-gray-900.svg" alt="Tuple" width="158" height="48">
+                <img class="col-span-2 max-h-12 w-full object-contain sm:col-start-2 lg:col-span-1" src="https://tailwindui.com/img/logos/158x48/savvycal-logo-gray-900.svg" alt="SavvyCal" width="158" height="48">
+                <img class="col-span-2 col-start-2 max-h-12 w-full object-contain sm:col-start-auto lg:col-span-1" src="https://tailwindui.com/img/logos/158x48/statamic-logo-gray-900.svg" alt="Statamic" width="158" height="48">
+              </div>
+            </div>
+          </div>
+          
+         </section>
+         <!-- About Me -->
+         <section>
+          <div class="flex items-center justify-center ">
+            <div class="text-center mx-8">
+                <h2 class="text-2xl font-bold">About Me</h2>
+                <h1 class="text-4xl font-extrabold mb-2 ">Entrepreneur, content creator, Finance Influencer</h1>
+                <div class="flex flex-wrap justify-center">
+                  <div class="w-1/2 mb-2  rounded-full px-4">
+                    <img src="./sh11.png" alt="..." class="shadow rounded-full  border-4 border-indigo-600 " />
+                  </div>
+                </div>  
+                <p class="mt-4 p-2">Hi, I'm Finance With Sharan. I’m a former management consultant at KPMG and PwC where I worked with banks and NBFCs to help <br>them make a ton of money.<br>
+                  <p class="mt-4 p-2">I now work as a full-time content creator and help the common man make a ton of money.</p>
+                  </p><p class="mt-4 p-2">I create engaging personal finance content with a blend of comedic flavor and cosplay on Instagram and YouTube. I also write down<br>
+                    highly action-oriented posts on LinkedIn and Twitter for those who are not on social media platforms and prefer to read it instead.</p>
+            </div>
+           
+          
+        </div>
+       
+        <div class="flex items-center justify-center">
+          <button class=" p-2 font-semibold text-white inline-flex items-center space-x-2 rounded-full">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10"  x="0px" y="0px" width="100" height="100" viewBox="0,0,256,256">
+              <g fill="#1877f2" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(8.53333,8.53333)"><path d="M15,2c-7.168,0 -13,5.832 -13,13c0,7.168 5.832,13 13,13c7.168,0 13,-5.832 13,-13c0,-7.168 -5.832,-13 -13,-13zM11.66602,6h6.66602c3.125,0 5.66797,2.54202 5.66797,5.66602v6.66602c0,3.125 -2.54202,5.66797 -5.66602,5.66797h-6.66602c-3.125,0 -5.66797,-2.54202 -5.66797,-5.66602v-6.66602c0,-3.125 2.54202,-5.66797 5.66602,-5.66797zM11.66602,8c-2.021,0 -3.66602,1.64597 -3.66602,3.66797v6.66602c0,2.021 1.64597,3.66602 3.66797,3.66602h6.66602c2.021,0 3.66602,-1.64597 3.66602,-3.66797v-6.66601c0,-2.021 -1.64597,-3.66602 -3.66797,-3.66602zM19.66797,9.66602c0.368,0 0.66602,0.29802 0.66602,0.66602c0,0.368 -0.29801,0.66797 -0.66602,0.66797c-0.368,0 -0.66797,-0.29997 -0.66797,-0.66797c0,-0.368 0.29997,-0.66602 0.66797,-0.66602zM15,10c2.757,0 5,2.243 5,5c0,2.757 -2.243,5 -5,5c-2.757,0 -5,-2.243 -5,-5c0,-2.757 2.243,-5 5,-5zM15,12c-1.65685,0 -3,1.34315 -3,3c0,1.65685 1.34315,3 3,3c1.65685,0 3,-1.34315 3,-3c0,-1.65685 -1.34315,-3 -3,-3z"></path></g></g>
+              </svg> </button>
+          <button class=" p-2 font-semibold text-white inline-flex items-center space-x-2 rounded-full">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10" x="0px" y="0px" width="100" height="100" viewBox="0 0 48 48">
+              <path fill="#1877f2" d="M24 5A19 19 0 1 0 24 43A19 19 0 1 0 24 5Z"></path><path fill="#fff" d="M26.572,29.036h4.917l0.772-4.995h-5.69v-2.73c0-2.075,0.678-3.915,2.619-3.915h3.119v-4.359c-0.548-0.074-1.707-0.236-3.897-0.236c-4.573,0-7.254,2.415-7.254,7.917v3.323h-4.701v4.995h4.701v13.729C22.089,42.905,23.032,43,24,43c0.875,0,1.729-0.08,2.572-0.194V29.036z"></path>
+              </svg>          </button>
+          <button class=" p-2 font-semibold text-white inline-flex items-center space-x-2 rounded-full">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10" x="0px" y="0px" width="100" height="100" viewBox="0,0,256,256">
+              <g fill="#1877f2" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(8.53333,8.53333)"><path d="M15,3c-6.627,0 -12,5.373 -12,12c0,6.627 5.373,12 12,12c6.627,0 12,-5.373 12,-12c0,-6.627 -5.373,-12 -12,-12zM10.496,8.403c0.842,0 1.403,0.561 1.403,1.309c0,0.748 -0.561,1.309 -1.496,1.309c-0.842,0.001 -1.403,-0.561 -1.403,-1.309c0,-0.748 0.561,-1.309 1.496,-1.309zM12,20h-3v-8h3zM22,20h-2.824v-4.372c0,-1.209 -0.753,-1.488 -1.035,-1.488c-0.282,0 -1.224,0.186 -1.224,1.488c0,0.186 0,4.372 0,4.372h-2.917v-8h2.918v1.116c0.376,-0.651 1.129,-1.116 2.541,-1.116c1.412,0 2.541,1.116 2.541,3.628z"></path></g></g>
+              </svg>    </button>
+          <button class=" p-2 font-semibold text-white inline-flex items-center space-x-2 rounded-full">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10" x="0px" y="0px" width="100" height="100" viewBox="0,0,256,256">
+              <g fill="#1877f2" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(8.53333,8.53333)"><path d="M15,3c-6.627,0 -12,5.373 -12,12c0,6.627 5.373,12 12,12c6.627,0 12,-5.373 12,-12c0,-6.627 -5.373,-12 -12,-12zM21.464,12.535c0.006,0.133 0.009,0.265 0.009,0.397c0,4.068 -3.095,8.756 -8.756,8.756c-1.739,0 -3.356,-0.509 -4.717,-1.383c0.241,0.029 0.486,0.042 0.735,0.042c1.443,0 2.769,-0.491 3.821,-1.318c-1.347,-0.025 -2.484,-0.915 -2.875,-2.137c0.188,0.036 0.381,0.055 0.579,0.055c0.281,0 0.554,-0.038 0.811,-0.108c-1.408,-0.282 -2.469,-1.526 -2.469,-3.017c0,-0.013 0,-0.026 0,-0.039c0.415,0.231 0.889,0.369 1.394,0.385c-0.825,-0.551 -1.369,-1.494 -1.369,-2.561c0,-0.565 0.151,-1.094 0.416,-1.547c1.518,1.862 3.786,3.088 6.343,3.216c-0.052,-0.225 -0.079,-0.46 -0.079,-0.701c0,-1.699 1.378,-3.078 3.077,-3.078c0.885,0 1.685,0.374 2.246,0.972c0.701,-0.139 1.36,-0.394 1.955,-0.747c-0.23,0.719 -0.718,1.321 -1.354,1.703c0.622,-0.074 1.215,-0.239 1.768,-0.484c-0.411,0.618 -0.932,1.159 -1.535,1.594z"></path></g></g>
+              </svg> </button>
+          <button class=" p-2 font-semibold text-white inline-flex items-center space-x-2 rounded-full">
+            <svg fill="#1877f2" class="w-9 h-9" width="100px" height="100px" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+
+              <g id="SVGRepo_bgCarrier" stroke-width="0"/>
+              
+              <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
+              
+              <g id="SVGRepo_iconCarrier">
+              
+              <path d="M11.603 9.833L9.357 8.785C9.161 8.694 9 8.796 9 9.013v1.974c0 .217.161.319.357.228l2.245-1.048c.197-.092.197-.242.001-.334zM10 .4C4.698.4.4 4.698.4 10s4.298 9.6 9.6 9.6 9.6-4.298 9.6-9.6S15.302.4 10 .4zm0 13.5c-4.914 0-5-.443-5-3.9s.086-3.9 5-3.9 5 .443 5 3.9-.086 3.9-5 3.9z"/>
+              
+              </g>
+              
+              </svg>   </button>
+              
+        </div>
+         </section>
+
+         <!-- Services -->
+         <section class="items-center justify-cente ">
+          <div class="items-center justify-center m-5">
+            <div class="text-center mx-8">
+                <h2 class="text-2xl font-bold">Services </h2>
+                <h1 class="text-4xl font-extrabold mb-2 ">Start your journey towards financial freedom</h1>
+            </div>
+            </div>  
+          <div class="flex items-center justify-center">
+            <button type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-xs sm:text-sm px-4 sm:px-8 py-2 text-center mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Community</button>
+            <button type="button" class="py-2 text-xs sm:text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-full border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700 px-4 sm:px-8 mr-2 mb-2">Courses</button>
+            <button type="button" class="py-2 text-xs sm:text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-full border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700 px-4 sm:px-8 mr-2 mb-2">Consultation</button>
+        </div>
+        
+         </section>
+         <section class=" flex items-center justify-center pt-12 mb-7">
+          <div class="items-center flex flex-wrap w-3/4 mb-5">
+            
+            <div class="w-full md:w-5/12 ml-auto mr-auto px-4">
+              <div class="md:pr-12">
+                <h3 class="text-3xl font-semibold">The 1% Club</h3>
+                <p class="mt-4 text-lg leading-relaxed text-blueGray-500">
+                  Now, I'm on a mission to help you get to the RICHEST 1% - one
+educational finance content at a time.
+                </p>
+                <ul class="list-none mt-6">
+                  <li class="py-2">
+                    <div class="flex">
+                      
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 mt-1 mr-2" x="0px" y="0px" width="100" height="100" viewBox="0 0 30 30">
+                          <path d="M15,3C8.373,3,3,8.373,3,15c0,6.627,5.373,12,12,12s12-5.373,12-12C27,8.373,21.627,3,15,3z M21.707,12.707l-7.56,7.56 c-0.188,0.188-0.442,0.293-0.707,0.293s-0.52-0.105-0.707-0.293l-3.453-3.453c-0.391-0.391-0.391-1.023,0-1.414s1.023-0.391,1.414,0 l2.746,2.746l6.853-6.853c0.391-0.391,1.023-0.391,1.414,0S22.098,12.316,21.707,12.707z"></path>
+                      </svg>  
+                        <h4 class="">
+                          Exclusive 1 on 1 interaction with the creator                        </h4>
+                      
+                    </div>
+                  </li>
+                  <li class="py-2">
+                    <div class="flex">
+                      
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 mt-1 mr-2" x="0px" y="0px" width="100" height="100" viewBox="0 0 30 30">
+                          <path d="M15,3C8.373,3,3,8.373,3,15c0,6.627,5.373,12,12,12s12-5.373,12-12C27,8.373,21.627,3,15,3z M21.707,12.707l-7.56,7.56 c-0.188,0.188-0.442,0.293-0.707,0.293s-0.52-0.105-0.707-0.293l-3.453-3.453c-0.391-0.391-0.391-1.023,0-1.414s1.023-0.391,1.414,0 l2.746,2.746l6.853-6.853c0.391-0.391,1.023-0.391,1.414,0S22.098,12.316,21.707,12.707z"></path>
+                      </svg>  
+                        <h4 class="">
+                          Connect with like minded folks, from diverse backgrounds &cities                         </h4>
+                      
+                    </div>
+                  </li>
+                  <li class="py-2">
+                    <div class="flex">
+                      
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 mt-1 mr-2" x="0px" y="0px" width="100" height="100" viewBox="0 0 30 30">
+                          <path d="M15,3C8.373,3,3,8.373,3,15c0,6.627,5.373,12,12,12s12-5.373,12-12C27,8.373,21.627,3,15,3z M21.707,12.707l-7.56,7.56 c-0.188,0.188-0.442,0.293-0.707,0.293s-0.52-0.105-0.707-0.293l-3.453-3.453c-0.391-0.391-0.391-1.023,0-1.414s1.023-0.391,1.414,0 l2.746,2.746l6.853-6.853c0.391-0.391,1.023-0.391,1.414,0S22.098,12.316,21.707,12.707z"></path>
+                      </svg>  
+                        <h4 class="">
+                          32+ Hours of Investing Tutorials, Tools & Community                     </h4>
+                      
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="w-full md:w-1/3 ml-auto mr-auto px-4">
+              <img alt="..." class="max-w-full rounded-lg shadow-lg" src="./sh11.png">
+            </div>
+          </div>
+          </section>
+
+          <section class="flex items-center justify-center ">
+            <div class="flex">
+              <button type="button" class="py-2 text-xs sm:text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-full border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700 px-4 sm:px-8 mr-2 mb-2">Community</button>
+              <button type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-xs sm:text-sm px-4 sm:px-8 py-2 text-center mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Courses</button>
+
+              <button type="button" class="py-2 text-xs sm:text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-full border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700 px-4 sm:px-8 mr-2 mb-2">Consultation</button>
+          </div>
+          
+           </section>
+
+           <section class="flex items-center justify-center">
+            <div class="grid grid-cols-1 gap-4 items-center justify-center w-3/4 md:grid-cols-3">
+
+    <div class="max-w-sm bg-white rounded-3xl  shadow dark:bg-gray-800 dark:border-gray-700">
+      <div class="m-3 rounded-t-lg"><img class="w-full rounded-t-lg " src="./the1.png" alt="the1"></div>
+      
+      <div class="p-5">
+          <a href="#">
+              <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">The 1% course</h5>
+          </a>
+          <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Now, I'm on a mission to help you get to the
+            RICHEST 1% - one educational finance
+            content at a time.</p>
+          <a href="#" class=" flex items-center justify-center px-8 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-full hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+            Buy the course @ ₹3,999
+              
+          </a>
+      </div>
+    </div>
+    <div class="max-w-sm bg-white rounded-3xl  shadow dark:bg-gray-800 dark:border-gray-700">
+      <div class="m-3 rounded-t-lg"><img class="w-full rounded-t-lg " src="./the1.png" alt="the1"></div>
+      
+      <div class="p-5">
+          <a href="#">
+              <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">The 1% course</h5>
+          </a>
+          <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Now, I'm on a mission to help you get to the
+            RICHEST 1% - one educational finance
+            content at a time.</p>
+          <a href="#" class=" flex items-center justify-center px-8 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-full hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+            Buy the course @ ₹3,999
+              
+          </a>
+      </div>
+    </div>
+    <div class="max-w-sm bg-white rounded-3xl  shadow dark:bg-gray-800 dark:border-gray-700">
+      <div class="m-3 rounded-t-lg"><img class="w-full rounded-t-lg " src="./the1.png" alt="the1"></div>
+      
+      <div class="p-5">
+          <a href="#">
+              <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">The 1% course</h5>
+          </a>
+          <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Now, I'm on a mission to help you get to the
+            RICHEST 1% - one educational finance
+            content at a time.</p>
+          <a href="#" class=" flex items-center justify-center px-8 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-full hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+            Buy the course @ ₹3,999
+              
+          </a>
+      </div>
+    </div>
+
+</div>
+           </section>
+
+           <section class="flex items-center justify-center my-4">
+            <div class="flex">
+              <button type="button" class="py-2 text-xs sm:text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-full border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700 px-4 sm:px-8 mr-2 mb-2">Community</button>
+              <button type="button" class="py-2 text-xs sm:text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-full border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700 px-4 sm:px-8 mr-2 mb-2">Courses</button>
+              <button type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-xs sm:text-sm px-4 sm:px-8 py-2 text-center mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Consultation</button>
+
+            </div>
+          
+           </section>
+
+           <section class="flex items-center justify-center">
+            <div class="grid grid-cols-1 gap-4 items-center justify-center w-3/4 md:grid-cols-3">
+              <div class="max-w-sm bg-white rounded-3xl shadow dark:bg-gray-800 dark:border-gray-700">
+                <div class="w-8 h-8 ml-5 my-4"><img class="w-full " src="./telephone-call.png" alt="the1"></div>
+                <div class="p-5">
+                    <a href="#">
+                        <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">SCO vs HEA Dream11 Team
+                          Prediction | Dream11</h5>
+                    </a>
+                    <div class="flex items-center">
+                      <svg fill="#D3D3D3" class="w-4 h-4 mr-2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M19,4H17V3a1,1,0,0,0-2,0V4H9V3A1,1,0,0,0,7,3V4H5A3,3,0,0,0,2,7V19a3,3,0,0,0,3,3H19a3,3,0,0,0,3-3V7A3,3,0,0,0,19,4Zm1,15a1,1,0,0,1-1,1H5a1,1,0,0,1-1-1V12H20Zm0-9H4V7A1,1,0,0,1,5,6H7V7A1,1,0,0,0,9,7V6h6V7a1,1,0,0,0,2,0V6h2a1,1,0,0,1,1,1Z"/>
+                      </svg>
+                      <p class="font-light text-gray-400 dark:text-gray-400">12 Slots left</p>
+                      <svg class="w-4 h-4 mx-2" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z" stroke="#D3D3D3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                          <path d="M12 6V12" stroke="#D3D3D3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                          <path d="M16.24 16.24L12 12" stroke="#D3D3D3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                      <p class="font-light text-gray-400 dark:text-gray-400">15 min ₹ 99/slot</p>
+                  </div>
+                  
+                    
+                    <a href="#" class=" flex items-center justify-center px-8 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-full hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                      View Details
+                        
+                    </a>
+                </div>
+              </div>
+              <div class="max-w-sm bg-white rounded-3xl shadow dark:bg-gray-800 dark:border-gray-700">
+                <div class="w-8 h-8 ml-5 my-4"><img class="w-full " src="./Google_Meet_icon_(2020).svg.png" alt="the1"></div>
+                <div class="p-5">
+                    <a href="#">
+                        <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">SCO vs HEA Dream11 Team
+                          Prediction | Dream11</h5>
+                    </a>
+                    <div class="flex items-center">
+                      <svg fill="#D3D3D3" class="w-4 h-4 mr-2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M19,4H17V3a1,1,0,0,0-2,0V4H9V3A1,1,0,0,0,7,3V4H5A3,3,0,0,0,2,7V19a3,3,0,0,0,3,3H19a3,3,0,0,0,3-3V7A3,3,0,0,0,19,4Zm1,15a1,1,0,0,1-1,1H5a1,1,0,0,1-1-1V12H20Zm0-9H4V7A1,1,0,0,1,5,6H7V7A1,1,0,0,0,9,7V6h6V7a1,1,0,0,0,2,0V6h2a1,1,0,0,1,1,1Z"/>
+                      </svg>
+                      <p class="font-light text-gray-400 dark:text-gray-400">12 Slots left</p>
+                      <svg class="w-4 h-4 mx-2" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z" stroke="#D3D3D3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                          <path d="M12 6V12" stroke="#D3D3D3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                          <path d="M16.24 16.24L12 12" stroke="#D3D3D3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                      <p class="font-light text-gray-400 dark:text-gray-400">15 min ₹ 99/slot</p>
+                  </div>
+                  
+                    
+                    <a href="#" class=" flex items-center justify-center px-8 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-full hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                      View Details
+                        
+                    </a>
+                </div>
+              </div>
+              <div class="max-w-sm bg-white rounded-3xl shadow dark:bg-gray-800 dark:border-gray-700">
+                <div class="w-8 h-8 ml-5 my-4"><img class="w-full " src="./telephone-call.png" alt="the1"></div>
+                <div class="p-5">
+                    <a href="#">
+                        <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">SCO vs HEA Dream11 Team
+                          Prediction | Dream11</h5>
+                    </a>
+                    <div class="flex items-center">
+                      <svg fill="#D3D3D3" class="w-4 h-4 mr-2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M19,4H17V3a1,1,0,0,0-2,0V4H9V3A1,1,0,0,0,7,3V4H5A3,3,0,0,0,2,7V19a3,3,0,0,0,3,3H19a3,3,0,0,0,3-3V7A3,3,0,0,0,19,4Zm1,15a1,1,0,0,1-1,1H5a1,1,0,0,1-1-1V12H20Zm0-9H4V7A1,1,0,0,1,5,6H7V7A1,1,0,0,0,9,7V6h6V7a1,1,0,0,0,2,0V6h2a1,1,0,0,1,1,1Z"/>
+                      </svg>
+                      <p class="font-light text-gray-400 dark:text-gray-400">12 Slots left</p>
+                      <svg class="w-4 h-4 mx-2" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z" stroke="#D3D3D3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                          <path d="M12 6V12" stroke="#D3D3D3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                          <path d="M16.24 16.24L12 12" stroke="#D3D3D3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                      <p class="font-light text-gray-400 dark:text-gray-400">15 min ₹ 99/slot</p>
+                  </div>
+                  
+                    
+                    <a href="#" class=" flex items-center justify-center px-8 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-full hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                      View Details
+                        
+                    </a>
+                </div>
+              </div>
+            </div>
+            </section>
+
+            <!-- Testimonials -->
+            <section>
+              <div class="items-center justify-center m-5">
+                <div class="text-center mx-8">
+                    <h2 class="text-2xl font-bold">Testimonials </h2>
+                    <h1 class="text-4xl font-extrabold mb-2 ">What community members are saying about us?</h1>
+                </div>
+                </div>  
+            </section>
+            <section class="flex items-center justify-center m-5">
+              
+            <div class="grid grid-cols-1 gap-4 items-center justify-center w-3/4 md:grid-cols-3">
+              <div class="max-w-sm bg-white rounded-3xl shadow dark:bg-gray-800 dark:border-gray-700">
+                <div class="p-5"><h5 class="mb-2 font-normal items-center tracking-tight text-gray-900 dark:text-white">Now, I'm on a mission to help you get
+                          to the RICHEST 1% - one educational
+                          finance content at a time. Now, I'm on
+                          a mission to help you get to the
+                          RICHEST 1% - one educational finance
+                          
+                          content at a time.</h5>
+                    
+                    <div class="flex justify-center items-center">
+                      <img class="w-10 h-10 rounded-full" src="./sh11.png" alt="Rounded avatar">
+                  </div>
+                    <div class="flex justify-center items-center">
+                      <h5 class="font-bold text-gray-900 text-xl">Rustom Paji</h5>
+                  </div>
+                    <div class="flex justify-center items-center">
+                      <p>Hotel owner</p>
+                  </div>
+                  
+                    
+                </div>
+              </div>
+              <div class="max-w-sm bg-white rounded-3xl shadow dark:bg-gray-800 dark:border-gray-700">
+                <div class="p-5"><h5 class="mb-2 font-normal items-center tracking-tight text-gray-900 dark:text-white">Now, I'm on a mission to help you get
+                          to the RICHEST 1% - one educational
+                          finance content at a time. Now, I'm on
+                          a mission to help you get to the
+                          RICHEST 1% - one educational finance
+                          
+                          content at a time.</h5>
+                    
+                    <div class="flex justify-center items-center">
+                      <img class="w-10 h-10 rounded-full" src="./sh11.png" alt="Rounded avatar">
+                  </div>
+                    <div class="flex justify-center items-center">
+                      <h5 class="font-bold text-gray-900 text-xl">Rustom Paji</h5>
+                  </div>
+                    <div class="flex justify-center items-center">
+                      <p>Hotel owner</p>
+                  </div>
+                  
+                    
+                </div>
+              </div>
+              <div class="max-w-sm bg-white rounded-3xl shadow dark:bg-gray-800 dark:border-gray-700">
+                <div class="p-5"><h5 class="mb-2 font-normal items-center tracking-tight text-gray-900 dark:text-white">Now, I'm on a mission to help you get
+                          to the RICHEST 1% - one educational
+                          finance content at a time. Now, I'm on
+                          a mission to help you get to the
+                          RICHEST 1% - one educational finance
+                          
+                          content at a time.</h5>
+                    
+                    <div class="flex justify-center items-center">
+                      <img class="w-10 h-10 rounded-full" src="./sh11.png" alt="Rounded avatar">
+                  </div>
+                    <div class="flex justify-center items-center">
+                      <h5 class="font-bold text-gray-900 text-xl">Rustom Paji</h5>
+                  </div>
+                    <div class="flex justify-center items-center">
+                      <p>Hotel owner</p>
+                  </div>
+                  
+                    
+                </div>
+              </div>
+              </div>
+            </section>
+
+
+
+            <!-- Media -->
+            <section class=" items-center justify-center p-5">
+              <div class=" m-5">
+                <div class="text-center mx-8">
+                    <h2 class="text-2xl font-bold">Media section </h2>
+                    <h1 class="text-4xl font-extrabold mb-2 ">Check out the intro video of the community</h1>
+                </div>
+                </div>  
+                
+              
+            </section>
+            <section  class=" flex items-center justify-center">
+              <div class=" items-center h-3/4 w-3/4 justify-center">
+                <img class=" sm:w-full sm:h-auto rounded-lg" src="./play1.jpg" alt="image description">
+            </div>
+            </section>
+
+            <!-- Download -->
+            <section class="bg-blue-600 rounded-t-full mt-8 p-8 items-center justify-center p-5">
+              <div class="flex flex-col items-center p-8 justify-center">
+                  <a href="#">
+                      <h1 class="mb-2 text-3xl sm:text-5xl font-bold tracking-tight text-white">
+                          Hack your wealth journey<br>inside the 1% club
+                      </h1>
+                  </a>
+                  <button href="#" class="mt-4 px-8 py-2 text-base sm:text-sm font-medium text-center text-blue-500 bg-white rounded-full hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                      Join the Community
+                  </button>
+              </div>
+              <div class="flex items-center justify-center h-3/4 w-3/4 sm:w-full">
+                <img class="sm:w-full sm:h-auto rounded-lg transform scale-50" src="./dw1.PNG" alt="image description">
+            </div>
+            
+          </section>
+          
+            <!-- Contact US -->
+
+            <section class="bg-white p-5">
+              <div class="items-center justify-center m-5">
+                <div class="text-center mx-8">
+                    <h2 class="text-2xl font-bold">Contact us </h2>
+                    <h1 class="text-4xl font-extrabold mb-2 ">Do you have any queries, feel free to reach out to us</h1>
+                </div>
+                </div>  
+                <div class="flex flex-wrap items-center justify-center m-5 gap-8 ">
+                  <div class="flex flex-wrap">
+                    <div class="m-2 ">
+                      <svg data-name="1-Email" class="w-8 h-8" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M29 4H3a3 3 0 0 0-3 3v18a3 3 0 0 0 3 3h26a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3zm-.72 2L16 14.77 3.72 6zM30 25a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V7.23l13.42 9.58a1 1 0 0 0 1.16 0L30 7.23z"/></svg>
+  
+                    </div>
+                    <div class="">
+                    <h5>Email</h5>
+                    <h5 class="font-bold">Support@gmail.com</h5>
+                  </div>
+                  </div>
+                  <div class="flex flex-wrap">
+                    <div class="m-2  ">
+  <svg fill="#000000" class="w-8 h-8" height="200px" width="200px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 308 308" xml:space="preserve"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g id="XMLID_468_"> <path id="XMLID_469_" d="M227.904,176.981c-0.6-0.288-23.054-11.345-27.044-12.781c-1.629-0.585-3.374-1.156-5.23-1.156 c-3.032,0-5.579,1.511-7.563,4.479c-2.243,3.334-9.033,11.271-11.131,13.642c-0.274,0.313-0.648,0.687-0.872,0.687 c-0.201,0-3.676-1.431-4.728-1.888c-24.087-10.463-42.37-35.624-44.877-39.867c-0.358-0.61-0.373-0.887-0.376-0.887 c0.088-0.323,0.898-1.135,1.316-1.554c1.223-1.21,2.548-2.805,3.83-4.348c0.607-0.731,1.215-1.463,1.812-2.153 c1.86-2.164,2.688-3.844,3.648-5.79l0.503-1.011c2.344-4.657,0.342-8.587-0.305-9.856c-0.531-1.062-10.012-23.944-11.02-26.348 c-2.424-5.801-5.627-8.502-10.078-8.502c-0.413,0,0,0-1.732,0.073c-2.109,0.089-13.594,1.601-18.672,4.802 c-5.385,3.395-14.495,14.217-14.495,33.249c0,17.129,10.87,33.302,15.537,39.453c0.116,0.155,0.329,0.47,0.638,0.922 c17.873,26.102,40.154,45.446,62.741,54.469c21.745,8.686,32.042,9.69,37.896,9.69c0.001,0,0.001,0,0.001,0 c2.46,0,4.429-0.193,6.166-0.364l1.102-0.105c7.512-0.666,24.02-9.22,27.775-19.655c2.958-8.219,3.738-17.199,1.77-20.458 C233.168,179.508,230.845,178.393,227.904,176.981z"></path> <path id="XMLID_470_" d="M156.734,0C73.318,0,5.454,67.354,5.454,150.143c0,26.777,7.166,52.988,20.741,75.928L0.212,302.716 c-0.484,1.429-0.124,3.009,0.933,4.085C1.908,307.58,2.943,308,4,308c0.405,0,0.813-0.061,1.211-0.188l79.92-25.396 c21.87,11.685,46.588,17.853,71.604,17.853C240.143,300.27,308,232.923,308,150.143C308,67.354,240.143,0,156.734,0z M156.734,268.994c-23.539,0-46.338-6.797-65.936-19.657c-0.659-0.433-1.424-0.655-2.194-0.655c-0.407,0-0.815,0.062-1.212,0.188 l-40.035,12.726l12.924-38.129c0.418-1.234,0.209-2.595-0.561-3.647c-14.924-20.392-22.813-44.485-22.813-69.677 c0-65.543,53.754-118.867,119.826-118.867c66.064,0,119.812,53.324,119.812,118.867 C276.546,215.678,222.799,268.994,156.734,268.994z"></path> </g> </g></svg>                  </div>
+                    <div class="">
+                    <h5>We are available on Whatsapp</h5>
+                    <h5 class="font-bold">Click to Whatsapp</h5>
+                  </div>
+                  </div>
+                  <div class="flex flex-wrap">
+                    <div class="m-2 ">
+                      <svg viewBox="0 0 24 24" class="w-8 h-8" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M17.3545 22.2323C15.3344 21.7262 11.1989 20.2993 7.44976 16.5502C3.70065 12.8011 2.2738 8.66559 1.76767 6.6455C1.47681 5.48459 2.00058 4.36434 2.88869 3.72997L5.21694 2.06693C6.57922 1.09388 8.47432 1.42407 9.42724 2.80051L10.893 4.91776C11.5152 5.8165 11.3006 7.0483 10.4111 7.68365L9.24234 8.51849C9.41923 9.1951 9.96939 10.5846 11.6924 12.3076C13.4154 14.0306 14.8049 14.5807 15.4815 14.7576L16.3163 13.5888C16.9517 12.6994 18.1835 12.4847 19.0822 13.1069L21.1995 14.5727C22.5759 15.5257 22.9061 17.4207 21.933 18.783L20.27 21.1113C19.6356 21.9994 18.5154 22.5232 17.3545 22.2323ZM8.86397 15.136C12.2734 18.5454 16.0358 19.8401 17.8405 20.2923C18.1043 20.3583 18.4232 20.2558 18.6425 19.9488L20.3056 17.6205C20.6299 17.1665 20.5199 16.5348 20.061 16.2171L17.9438 14.7513L17.0479 16.0056C16.6818 16.5182 16.0047 16.9202 15.2163 16.7501C14.2323 16.5378 12.4133 15.8569 10.2782 13.7218C8.1431 11.5867 7.46219 9.7677 7.24987 8.7837C7.07977 7.9953 7.48181 7.31821 7.99439 6.95208L9.24864 6.05618L7.78285 3.93893C7.46521 3.48011 6.83351 3.37005 6.37942 3.6944L4.05117 5.35744C3.74413 5.57675 3.64162 5.89565 3.70771 6.15943C4.15989 7.96418 5.45459 11.7266 8.86397 15.136Z" fill="#0F0F0F"></path> </g></svg>
+                    </div>
+                    <div class="">
+                    <h5>Call for sales & Support</h5>
+                    <h5 class="font-bold">+91-8460068722</h5>
+                  </div>
+                  </div>
+                </div>
+            </section>
+       
+    <!--Footer container-->
+<footer class="bg-blue-800 text-center text-white">
+  <h1 class="text-4xl p-5">Logo</h1>
+  <div class="container px-6 pt-6">
+    <div class="mb-6 gap-4 flex justify-center">
+      <a
+        href="#!"
+        type="button"
+        class="m-1 h-9 w-9 rounded-full border-2 border-white uppercase leading-normal text-white transition duration-150 ease-in-out hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0"
+        data-te-ripple-init
+        data-te-ripple-color="light">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="mx-auto h-full w-4"
+          fill="currentColor"
+          viewBox="0 0 24 24">
+          <path
+            d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z" />
+        </svg>
+      </a>
+
+      <a
+        href="#!"
+        type="button"
+        class="m-1 h-9 w-9 rounded-full border-2 border-white uppercase leading-normal text-white transition duration-150 ease-in-out hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0"
+        data-te-ripple-init
+        data-te-ripple-color="light">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="mx-auto h-full w-4"
+          fill="currentColor"
+          viewBox="0 0 24 24">
+          <path
+            d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z" />
+        </svg>
+      </a>
+
+     
+
+      <a
+        href="#!"
+        type="button"
+        class="m-1 h-9 w-9 rounded-full border-2 border-white uppercase leading-normal text-white transition duration-150 ease-in-out hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0"
+        data-te-ripple-init
+        data-te-ripple-color="light">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="mx-auto h-full w-4"
+          fill="currentColor"
+          viewBox="0 0 24 24">
+          <path
+            d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+        </svg>
+      </a>
+
+      <a
+        href="#!"
+        type="button"
+        class="m-1 h-9 w-9 rounded-full border-2 border-white uppercase leading-normal text-white transition duration-150 ease-in-out hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0"
+        data-te-ripple-init
+        data-te-ripple-color="light">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="mx-auto h-full w-4"
+          fill="currentColor"
+          viewBox="0 0 24 24">
+          <path
+            d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z" />
+        </svg>
+      </a>
+
+     
+    </div>
+  </div>
+  <div class="flex justify-center my-10">
+    <div class="flex items-center border bg-gray-900 w-auto rounded-lg px-4 py-2 w-52 mx-2">
+        <img src="https://cdn-icons-png.flaticon.com/512/888/888857.png" class="w-7 md:w-8">
+        <div class="text-left ml-3">
+            <p class='text-xs text-gray-200'>Download on </p>
+            <p class="text-sm md:text-base"> Google Play Store </p>
+        </div>
+    </div>
+    <div class="flex items-center border w-auto bg-gray-900  rounded-lg px-4 py-2 w-44 mx-2">
+        <img src="https://cdn-icons-png.flaticon.com/512/888/888841.png" class="w-7 md:w-8">
+        <div class="text-left ml-3">
+            <p class='text-xs text-gray-200'>Download on </p>
+            <p class="text-sm md:text-base"> Apple Store </p>
+        </div>
+    </div>
+</div>
+  <div
+    class="p-4 text-center gap-4">
+    © 2023 companyname. inc. 
+    <a class="text-whitehite" href="#"
+      >Privacy Policy Terms of services</a
+    >
+  </div>
+</footer>
+  </body>
+</html>
